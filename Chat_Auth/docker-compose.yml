@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    container_name: postgres_database
+    environment:
+      POSTGRES_PASSWORD: user_datastorage
+    ports:
+      - 5433:5432
